@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="author" content="Subodh Lamichhane">
+    <meta name="description" content="HTML Document">
+    <meta name="keywords" content="Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+
+     * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.hero{
+  height: 800px;
+  width: 100%;
+  background-image: url("images/bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+
+
+}
+nav{
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 20px;
+  background-color: black;
+}
+.logo{
+  color: whitesmoke;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px 50px;
+
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover{
+  color: #f9004d;
+  transition: .4s;
+
+}
+
+
+
+
+
+h1{
+  color: white;
+  margin: 15px 0px 20px;
+  font-size: 70px;
+}
+h3{
+  color:#f9004d;
+  font-size: 35px;
+  margin-bottom: 70px;
+}
+h4{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+span{
+  color: #f9004d;
+}
+
+.contents{
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  transform: translateY(-50%); 
+}
+
+
+.landing{
+  height: 200px;
+  top: 20px;
+  width: 100%;
+  /* display: flex; */
+  position: relative;
+  background-color: #ff0000;
+}
+
+.about{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #101010;
+}
+.about img{
+  height: 500px;
+  width: 400px;
+  padding-right: 50px;
+}
+.AboutMeText{
+  width: 700px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.AboutMeText h2{
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.AboutMeText h5{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.AboutMeText p{
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+button{
+  background-color: #f9004d;
+  color: black;
+  text-decoration: none;
+  border: 3px solid transparent;
+  font-weight: bold;
+  padding: 15px 32px;
+  border-radius: 35px;
+  transition: .3s;
+}
+button:hover{
+  background-color: white;
+  color: #f9004d;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.Skills{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: black;
+}
+.SkillsText{
+  align-items: center;
+  width: 1000px;
+}
+.SkillsText h2{
+  align-items: center;
+  width: 100%;
+  padding-left: 250px;
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+
+.SkillsImg{
+  position: relative;
+  width: 1000px;
+  padding-left: 70px;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p:nth-child(1){
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold ;
+}
+.socials{
+  display: flex;
+}
+
+.footerx h5{
+  color: white;
+}
+
+.hello{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  background: #f9004d;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.hello:hover{
+  transform: scale(1.3);
+  transition: .4s;
+}
+
+.end{
+  position: absolute;
+  color: red;
+  bottom: 35px;
+  font-size: 14px;
+}
+.imgs{
+  padding-top: 200px;
+  padding-left: 1300px; 
+}
+
+.projects{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #101010;
+}
+.projectsText{
+  align-items: center;
+  width: 1000px;
+}
+.projectsText h2{
+  align-items: center;
+  width: 100%;
+  padding-left: 250px;
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.projectsText h5{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  padding: 10px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.projectsImg{
+  position: relative;
+  width: 1000px;
+
+}
+
+.projectsImg img{
+  padding: 10px;
+}
+
+
+tab {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+.resume{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #000000;
+}
+.resumeText{
+  align-items: center;
+  width: 1000px;
+}
+
+.resumeText h2{
+  align-items: center;
+  width: 100%;
+  padding-left: 250px;
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 75px;
+}
+
+
+.resume img{
+  position: relative;
+  margin-left: 330px;
+}
+
+.resume button{
+  margin-right: 200px;
+}
+
+
+
+    </style>
+  </head>
+
+  <!--navigation bar code starts-->
+<div class="hero">   
+
+  <nav>
+      <h2 class="logo"><span>S</span>LC</h2>
+      <ul>
+        <li><a href="file:///C:/Subodh%20Files/Internships/CodSoft%20Intern/Portfolio/portfolio3.html">Home</a></li>
+        <li><a href="/aboutus.html">About</a></li>
+        <li><a href="../index.html">Skills</a></li>
+        <li><a href="../index.html">Projects</a></li>
+        <li><a href="../index.html">Resume</a></li>
+        <li><a href="../index.html">Contact Me</a></li>
+      </ul>
+  </nav>
+
+  <div class="contents">
+    <h4> This is </h4>
+    <h1><span>Subodh </span>Lamichhane's</h1>
+    <h3>Portfolio</h3>
+  </div>
+</div>
+
+
+<!---- About Me section starts---->
+<section class="about">
+  <div class="main">
+    <img src="images/about.jpg">
+    <div class="AboutMeText">
+      <h2>My Story</h2>
+      <h5>An Enthusiastic and Motivated Learner</h5>
+      <p><span>I have simply loved learning new things and creating stuff from ever since I was a child. Growing up surrounded with technology, I have always been fascinated with the these revolutionary creations. This fascination ultimately led to develop a passion for coding. A mature yet unstoppable mindset wanting the world at the palm of my hands, I know that my success is inevitable. </span></p>
+      <button onclick="window.location.href='https://www.linkedin.com/in/subodh-lamichhane-166b79266/'">
+        Link Up
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!----Skills section start---->
+<section class="Skills">
+  <div class="main">
+    <div class="SkillsText">
+    <h2>Skills i Possess</h2>
+    <div class="SkillsImg">
+    <img src="images/html.png" height="150" width="150" >
+    <img src="images/css.png" height="150" width="150">
+    <img src="images/js.png" height="150" width="150">
+    <img src="images/java.png" height="150" width="150">
+    <img src="images/python.png" height="150" width="150">
+    </div>
+    </div>
+</div>
+</section>
+
+<!----Projects section start---->
+<section class="projects">
+  <div class="main">
+    <div class="projectsText">
+    <h2>Some of my Projects</h2>
+    <h5><tab><tab><tab>Calculator <tab> <tab><tab><tab><tab><tab><tab><tab>GymMan<tab><tab><tab><tab><tab><tab><tab>Landing Page</h5>
+  
+    <div class="projectsImg">
+      
+      <img src="images/Calculator.png" height="300" width="300" >
+      
+      <img src="images/GymMan.png" height="300" width="350">
+      
+      <img src="images/landing.png" height="300" width="300">
+
+      </div>
+      <tab><tab>   <button onclick="window.location.href='../Calculator/Calculator.html'">
+        Open Calculator
+      </button> <tab><tab><tab><tab><tab><tab><tab>
+      <button onclick="window.location.href='../GymMan/html.html'">
+        Play GymMan
+      </button><tab><tab><tab><tab><tab><tab><tab>
+      <button onclick="window.location.href='../Landing Page/BoxTV.html'">
+        Open Page
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!----Resume section start---->
+<section class="resume">
+  <div class="main">
+    <div class="resumeText">
+    <h2>Here is my Resume!</h2>
+    
+      <img src="images/resume.png" height="400" width="320" >
+
+      
+      
+    </div>
+    <button onclick="window.location.href='///C:/Users/ASUS/Desktop/resume.pdf'">
+      Download PDF
+    </button>
+  
+  </div>
+</section>
+
+
+<!----Contact---->
+<footer>
+  <p>Contact Me On My Socials: </p>
+  <div class="socials">
+    <a class = "hello" href="https://www.linkedin.com/in/subodh-lamichhane-166b79266/"><i class="fab fa-linkedin"></i></a>
+    <a class = "hello" href="https://www.facebook.com/subodh.lc.31"><i class="fab fa-facebook-f"></i></a>
+
+  </div>
+  <div class="footerx">
+  <h5> subodhlc10@gmail.com</h5>
+  <h5> +977 9860969268</h5>
+</div>
+  <p class="end">CopyRighted By Subodh Lamichhane</p>
+
+</footer>
+</body>
+</html>

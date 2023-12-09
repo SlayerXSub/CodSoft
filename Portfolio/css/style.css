@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: .2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*text for the website*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*assigning colors for the navigation bar*/
+nav{
+  background-color: #8CB59C;
+  color: #FFFFFF;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 2, 0.2);
+  z-index: 1000;
+}
+
+.navLogo{
+  cursor: pointer;
+  padding-left: 50px;
+}
+
+/*desiging the navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar table td a{
+  text-decoration: none;
+}
+
+.navLinks{
+  margin: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: #111;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+
+.navLinks:hover{
+  background: #7a9e87;
+}
+
+.navLinks:active{
+  background: #678672;
+}
+
+.topRight{
+  display: flex;
+  align-items: center;
+}
+
+/*giving spaces in between icons in the top right*/
+.topRight .cart-icon{ 
+  padding-right: 20px; 
+}
+
+ul a{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-1{
+  display: inline-block;
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  border-radius: 3.2px; 
+  background: #556B2F;
+  padding: 8px 24px; 
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+  border-width: 0; 
+  transition: 0.2s; 
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-1:hover{
+  background: #415224;
+}
+
+.btn-1:active{
+  opacity: 0.8;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background:url(../images/bonsai1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px
+}
+
+
+/* feature of website in home page css */
+.feat{
+  background:#eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px 100px; /* top and bottom px left and right px */
+}
+
+.feat .icons{
+  background:#fff;
+  border: 1.5px solid rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex:1 1 400px;
+}
+
+.feat .icons img{
+  height: 80px;
+  margin-right: 32px;
+}
+
+.feat .icons h3{
+  color:#333;
+  padding-bottom: 8px;
+  font-size: 24px;
+}
+
+.feat .icons span{
+  color:#999;
+  font-size: 20px;
+}
+/* feature of website in home page ends */
+
+/* featured product in home page css */
+.products .heading{ 
+  margin-top: 40px;
+  margin-left: 115px;
+  font-size: 35px
+}
+
+.products .box-container{
+  display: flex;
+  gap: 30px;
+  padding: 20px 90px;
+}
+
+.products .box-container .box{
+  flex:1 1 480px;
+  box-shadow: 5px 5px rgba(8, 8, 8, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,1);
+  position: relative;  
+}
+
+.products .box-container .box .image img{
+  height: 320px;
+}
+
+.products .box-container .box:hover{
+  transform: scale(1.02);
+  transition: 0.6s ease;
+  
+}
+
+.products .box-container .box .content{
+  padding: 30px;
+  text-align: center;
+  background: #8cb59c;
+  border-radius: 8px;
+}
+
+.products .box-container .box .content h3{
+  font-size: 40px;
+}
+
+.products .box-container .box .content .price{
+  font-size: 32px;
+  color: #D10000;
+  font-weight: bolder;
+  padding-top: 15px;
+}
+
+.products .box-container .box .content .price span{
+  font-size: 24px;
+  color: #111;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+/* navsection in home css */
+.navsection .box{
+  display: flex;
+}
+
+.navsection .box-container .box{
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: 40px 80px;
+  gap: 24px;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+.navsecbtn{
+  line-height: 90px;
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  border-radius: 5px; 
+  background: #556B2F;
+  padding: 15px 40px; 
+  margin: 5px;
+  border-width: 0;  
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navsecbtn:hover{
+  background: #415224;
+}
+
+.navsecbtn:active{
+  opacity: 0.8;
+}
+/* navsection in home css ends* /
+
+
+/*footer css starts*/
+.footer{
+  width: 100%;
+  padding: 50px 100px;
+  background: #333;
+  color: #efefef;
+  display: flex;
+}
+
+.footer div{
+  text-align: center;
+}
+
+.col2{
+  flex-grow: 2;
+}
+
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.news input{
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+.news button{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.footer .col3 .social-media{
+  cursor: pointer;
+  align-content: center;
+  justify-content: center;
+}
+/*footer css ends*/
+/*home page css ends*/
+
+/*Featured Products css starts*/
+
+/*box for the products*/
+
+.products .small-container .col-3{
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+  border-radius: 8px;
+  border:2px solid rgba(0,0,0,.1);
+  position: relative;
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+  margin-left: 20px; 
+  margin-right: 20px; 
+  width: 380px;
+}
+
+.col-3{
+  text-align: center;
+  width: auto;
+}
+
+.col-3 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.col-3 h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color:#334;
+}
+
+.col-3 p{
+  font-size: 17px;
+  color:#777;
+  line-height: 2;
+  padding:7px;
+}
+
+.col-3 span{
+  font-size: 14px;
+  color:#777;
+  margin-bottom: 15px;
+}
+
+.description{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;       
+  margin-top: 15px; 
+  padding-top: 15px; 
+  border-top:1px solid rgb(0, 0, 0); 
+  margin-left: 0.5cm;       
+  margin-right: 0.5cm;
+}
+
+/* product page css end */
+
+/* Learnmore page css starts */
+.col-4{
+  box-shadow: 0 8px 24px rgba(0,0,0,.1);
+  border-radius: 8px;
+  border: 2px solid rgba(0,0,0,.1);
+  margin-top: 20px;  
+  margin-bottom: 10px;  
+  margin-left: 50px; 
+  margin-right: 50px; 
+  display: flex;
+}
+
+/* Learnmore page css ends*/
+
+/* blog page css */
+
+.blog-column{
+  border: 3px solid;
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+
+.card{
+	padding: 20px;
+	background-color: #ffffff;
+  margin-top:20px;
+}
+
+.card img{
+	width: 100%;
+}
+
+.right-column .card img{
+	margin-bottom: 10px;
+}
+
